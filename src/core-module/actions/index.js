@@ -4,9 +4,9 @@ export const getItems = () => {
   }
 }
 
-export const getItem = (item) => {
+export const addItem= (item) => {
   return {
-    type: 'GET_ITEM',
+    type: 'ADD_ITEM',
     item
   }
 }
@@ -18,8 +18,9 @@ export const deleteItem = (item) => {
   }
 }
 
-export const showItemsList = () => {
+export const updateItem = (item) => {
   return{
-    type: 'SHOW_ITEMS_LIST'
+    type: 'UPDATE_ITEM',
+    item
   }
 }
